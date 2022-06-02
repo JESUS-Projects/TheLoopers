@@ -28,4 +28,5 @@ const clotheSchema = new Schema(
   { timestamps: true }
 );
 
-module.exports = mongoose.model("Clothes", clotheSchema);
+export default mongoose.models.Clothes ||
+  mongoose.model("Clothes", clotheSchema);
