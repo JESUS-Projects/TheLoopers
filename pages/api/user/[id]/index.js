@@ -7,11 +7,11 @@ export default async function handler(req, res) {
 
   await dbConnect();
 
+  const { id } = req.query;
+
   switch (method) {
     // GET user by id
     case "GET":
-      const { id } = req.query;
-
       try {
         const user = await User.findById(id);
         console.log(user);
@@ -26,6 +26,24 @@ export default async function handler(req, res) {
         });
       }
       break;
+
+    case "DELETE":
+      // Delete user by id
+      try {
+        await User.deleteOne({
+          _id: id,
+        });
+
+        res.status(200).json({
+          error: false,
+          msg: "Successfully deleted",
+        });
+      } catch (error) {
+        res.status(400).json({
+          error: true,
+          msg: "[/pages/api/user/:id | DELETE method] cannot delete user by id",
+        });
+      }
 
     default:
       res.status(400).json({
