@@ -44,6 +44,27 @@ export default async function handler(req, res) {
           msg: "[/pages/api/user/:id | DELETE method] cannot delete user by id",
         });
       }
+      break;
+
+    case "PUT":
+      // Update user by id
+      // Can update entirely or partially
+      try {
+        const doc = req.body;
+        await User.findOneAndUpdate({ _id: id }, doc);
+
+        res.status(200).json({
+          error: true,
+          msg: "Successfully updated",
+        });
+      } catch (error) {
+        res.status(404).json({
+          error: true,
+          msg: "[/pages/api/user/:id | UPDATE method] cannot update user by id",
+        });
+      }
+
+      break;
 
     default:
       res.status(400).json({
