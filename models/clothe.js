@@ -47,7 +47,7 @@ const clotheSchema = new Schema(
       type: Number,
       required: true,
     },
-    expected_point: {
+    point: {
       type: Number,
       requred: true,
     },
