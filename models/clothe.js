@@ -8,6 +8,10 @@ const clotheSchema = new Schema(
       type: String,
       required: true,
     },
+    size: {
+      type: String,
+      required: true,
+    },
     color: {
       type: String,
       required: true,
@@ -23,6 +27,29 @@ const clotheSchema = new Schema(
     category: {
       type: String,
       required: true,
+    },
+    condition: {
+      type: String,
+      required: true,
+    },
+    flaw: {
+      type: Boolean,
+      required: true,
+    },
+    flaw_detail: {
+      type: String,
+    },
+    brand: {
+      type: String,
+      required: true,
+    },
+    original_price: {
+      type: Number,
+      required: true,
+    },
+    point: {
+      type: Number,
+      requred: true,
     },
   },
   { timestamps: true }

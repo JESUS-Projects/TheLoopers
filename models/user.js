@@ -34,6 +34,24 @@ const userSchema = new Schema(
         img: String,
       },
     },
+    point: {
+      type: Number,
+      required: true,
+    },
+    address: {
+      addressLine: {
+        type: String,
+      },
+      district: {
+        type: String,
+      },
+      province: {
+        type: String,
+      },
+      postcode: {
+        type: String,
+      },
+    },
   },
   {
     timestamps: true,
