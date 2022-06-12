@@ -6,7 +6,7 @@ import CallOutlinedIcon from '@mui/icons-material/CallOutlined';
 
 export default function Footer() {
   return (
-    <div className="flex justify-between py-4 px-20 bg-primaryPink text-l text-white">
+    <div className="flex justify-between py-6 px-36 bg-primaryPink text-l text-white">
       <div>
         <img src={logo}/>
         <a className="text-xl">theLoopers</a>
