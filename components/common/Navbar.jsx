@@ -7,7 +7,7 @@ import ShoppingBasketOutlinedIcon from '@mui/icons-material/ShoppingBasketOutlin
 export default function Navbar() {
   return (
     
-    <nav className="flex justify-between bg-primaryPink text-xl mb-4 text-white">
+    <nav className="flex justify-between bg-primaryPink text-xl mb-6 text-white">
         <div className="flex justify-betweenmx-2 items-center my-6 mx-2">
           <Link href="/"><a className="mx-4">theLoopers</a></Link>
           <Link href="/"><a className="mx-4" >Language</a></Link>
