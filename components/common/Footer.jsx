@@ -1,18 +1,23 @@
 import React from "react";
 import Link from "next/link";
 import logo from "../../public/images/logo.png";
+import Image from "next/image";
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 import CallOutlinedIcon from '@mui/icons-material/CallOutlined';
 
 export default function Footer() {
   return (
-    <div className="flex justify-between py-6 px-36 bg-primaryPink text-l text-white">
-      <div>
-        <img src={logo}/>
-        <a className="text-xl">theLoopers</a>
+    <div className="flex justify-between py-6 px-44 bg-primaryPink text-xl text-white">
+      <div className="flex flex-col items-center">
+        <Image src={logo} width={200} height={220}/>
+        <a className="text-2xl">theLoopers</a>
       </div>
       <div>
-        <a>theLoopers</a>
+        <div className="flex flex-col mb-6">
+          <a className="font-bold">theLoopers</a>
+          <a>แพลทฟอร์มสำหรับแลกเปลี่ยนเสื้อผ้า</a>
+          <a>ให้เสือ้ผ้าของคุณกลับมามีคุณค่าอีกครั้ง</a>
+        </div>
         <div className="">
           <EmailOutlinedIcon/> 
           <a className="mx-2">theloopers_team@gmail.com</a>
