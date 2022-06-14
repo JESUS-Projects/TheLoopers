@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 
+import Login from "../components/common/Login";
 import Navbar from "../components/common/Navbar";
 import Footer from "../components/common/Footer";
 import MainSearchBox from "../components/MainSearchBox";
