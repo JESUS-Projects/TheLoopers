@@ -1,0 +1,17 @@
+{
+	img: "URL",
+	size: "S",
+	color: "blue",
+	facric: "cotton",
+	category: "top",
+	condition: "used like new",
+	flaw: true,
+	flaw_detail: "color faded",
+	brand: "non-brand",
+	original_price: 500,
+	point: 60
+}
+
+{
+	
+}
