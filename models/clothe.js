@@ -11,26 +11,27 @@ const clotheSchema = new Schema(
     size: {
       type: String,
       required: true,
+      enum: ['XS', 'S', 'M' , 'L' , 'XL' , 'free size']
     },
     color: {
-      type: String,
-      required: true,
-    },
-    pattern: {
       type: String,
       required: true,
     },
     fabric: {
       type: String,
       require: true,
+      enum: ['cotton', 'linen', 'denim' , 'satin' , 'silk' , 'leather' , 'others']
+
     },
     category: {
       type: String,
       required: true,
+      enum: ['top', 'shorts', 'trousers' , 'skirt' , 'dress' , 'outer']
     },
     condition: {
       type: String,
       required: true,
+      enum: ['new', 'used like new', 'good condition']
     },
     flaw: {
       type: Boolean,
