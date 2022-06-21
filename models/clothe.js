@@ -51,6 +51,10 @@ const clotheSchema = new Schema(
       type: Number,
       requred: true,
     },
+    owner: {
+      type: String,
+      required: true,
+    }
   },
   { timestamps: true }
 );
