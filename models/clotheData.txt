@@ -1,0 +1,66 @@
+{
+	img: "URL",
+	size: "S",
+	color: "blue",
+	facric: "cotton",
+	category: "top",
+	condition: "used like new",
+	flaw: true,
+	flaw_detail: "color faded",
+	brand: "non-brand",
+	original_price: 500,
+	point: 40
+}
+
+{
+	img: "URL",
+	size: "M",
+	color: "red",
+	facric: "satin",
+	category: "dress",
+	condition: "new",
+	flaw: false,
+	brand: "uniqlo",
+	original_price: 700,
+	point: 60
+}
+
+{
+	img: "URL",
+	size: "X",
+	color: "white",
+	facric: "denim",
+	category: "trousers",
+	condition: "good condition",
+	flaw: false,
+	brand: "non-brand",
+	original_price: 300,
+	point: 20
+}
+
+{
+	img: "URL",
+	size: "XL",
+	color: "pink",
+	facric: "silk",
+	category: "outer",
+	condition: "new",
+	flaw: true,
+	flaw_detail: "seam puckering",
+	brand: "non-brand",
+	original_price: 450,
+	point: 30
+}
+
+{
+	img: "URL",
+	size: "XS",
+	color: "green",
+	facric: "cotton",
+	category: "skirt",
+	condition: "good condition",
+	flaw: false,
+	brand: "pomelo",
+	original_price: 555,
+	point: 40
+}
